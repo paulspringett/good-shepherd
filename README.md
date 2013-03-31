@@ -16,6 +16,10 @@ and load this into the emulator.
 
 Then type `RUN` (the emulator may autocomplete `R` to `RUN`) and press `ENTER`.
 
+### Can I play it on a real ZX Spectrum?
+
+Yes! You'll need to play the `GoodShepherd.wav` file into the ZX Spectrum cassette input (either directly from your computer or via CD/cassette player)
+
 ### How do I modify source and re-compile?
 
 You'll need to clone down this repository
@@ -32,9 +36,5 @@ I've included the `bas2tap` (Copyright M. van der Heide) utility for doing this.
 To compile
 
     ./bas2tap/bas2tap GoodShepherd.bas
-
-### Is there anything else that needs doing?
-
-Yes! It would be great to include a WAV file, so people could load the program onto a cassette tape to play on a ZX Spectrum for real!
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Good Shepherd</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Simon Springett</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
