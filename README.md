@@ -27,7 +27,7 @@ and open the `GoodShepherd.bas` file, which contains the source code for the gam
 
 To run the code in an emulator you'll need to compile the BASIC into a TAP file.
 
-I've included the `bas2tap` utility for doing this. I've already compgiled the C code into a binary for Mac OS X. There's also a Windows EXE version. If you're on another version Mac OS X or Linux you may need to compile your own version.
+I've included the `bas2tap` (Copyright M. van der Heide) utility for doing this. I've already compiled the C code into a binary for Mac OS X. There's also a Windows EXE version. If you're on another version Mac OS X or Linux you may need to compile your own version.
 
 To compile
 
