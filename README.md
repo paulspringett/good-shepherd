@@ -12,9 +12,7 @@ Next, download the binary TAP (tape) file
 
 * [GoodShepherd.tap](https://github.com/paulspringett/GoodShepherd/raw/v1.0/GoodShepherd.tap)
 
-and load this into the emulator.
-
-Then type `RUN` (the emulator may autocomplete `R` to `RUN`) and press `ENTER`.
+and load this into the emulator. The game should start automatically.
 
 ### Can I play it on a real ZX Spectrum?
 
@@ -35,6 +33,6 @@ I've included the `bas2tap` (Copyright M. van der Heide) utility for doing this.
 
 To compile
 
-    ./bas2tap/bas2tap GoodShepherd.bas
+    ./bas2tap/bas2tap -a1 GoodShepherd.bas
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Good Shepherd</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Simon Springett</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
