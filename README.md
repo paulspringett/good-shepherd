@@ -2,6 +2,8 @@
 
 Copyright &copy; 1984 Simon Springett
 
+![Gameplay](http://f.cl.ly/items/2M1715460c3L263E0i28/GoodShepherd.mov.gif)
+
 ### How do I get this running?
 
 First, you'll need a ZX Spectrum emulator, like [Fuse](http://fuse-emulator.sourceforge.net/). Versions are available for Mac, Linux and PC.
