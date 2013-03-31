@@ -27,7 +27,7 @@ and open the `GoodShepherd.bas` file, which contains the source code for the gam
 
 To run the code in an emulator you'll need to compile the BASIC into a TAP file.
 
-I've included the `bas2tap` utility for doing this. I've already compiled the C code into a binary for Mac OS X. There's also a Windows EXE version. If you're on another version Mac OS X or Linux you may need to compile your own version.
+I've included the `bas2tap` utility for doing this. I've already compgiled the C code into a binary for Mac OS X. There's also a Windows EXE version. If you're on another version Mac OS X or Linux you may need to compile your own version.
 
 To compile
 
@@ -37,3 +37,4 @@ To compile
 
 Yes! It would be great to include a WAV file, so people could load the program onto a cassette tape to play for real!
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Good Shepherd</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Simon Springett</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/paulspringett/GoodShepherd" rel="dct:source">https://github.com/paulspringett/GoodShepherd</a>.
