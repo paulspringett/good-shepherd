@@ -23,11 +23,11 @@ You'll need to clone down this repository
     git clone git://github.com/paulspringett/GoodShepherd.git
     cd GoodShepherd/
 
-and open the `GoodShepherd.bas` file, which contains the source code for the game, written im 48k BASIC.
+and open the `GoodShepherd.bas` file, which contains the source code for the game, written in 48k BASIC.
 
 To run the code in an emulator you'll need to compile the BASIC into a TAP file.
 
-I've included the `bas2tap` utility for doing this. I've already comiled the C code into a binary for Mac OS X. There's also a Windows EXE version. If you're on another version Mac OS X or Linux you may need to compile your own version.
+I've included the `bas2tap` utility for doing this. I've already compiled the C code into a binary for Mac OS X. There's also a Windows EXE version. If you're on another version Mac OS X or Linux you may need to compile your own version.
 
 To compile
 
