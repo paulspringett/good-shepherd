@@ -265,3 +265,51 @@
 9363 PRINT "wolf. Of course you must not run"
 9364 PRINT "into the flock itself, or the"
 9365 PRINT "sheep will be scattered and lost"
+
+9366 GO SUB 9000: REM USR GRAPHICS
+9367 PRINT `;TAB 7;"xxxxxxxxxxxxxxxxx&"
+9368 GO SUB 9200: REM CRIMMOND
+9370 PRINT `"   Press any key to continue"
+9371 IF INKEY$<>"" THEN GO TO 9371
+9372 IF INKEY$="" THEN GO TO 9372
+9373 CLS
+9374 PRINT ```"When you have fed the sheep,"
+9375 PRINT "take them back to the fold (you"
+9376 PRINT "can get in only via the door you"
+9377 PRINT "came out of) to get a new and"
+9378 PRINT "larger flock to care for."
+9379 PRINT ```"Kill the wolf by running himdown with the shepherd: butwatch out, because he's a trickycustomer!"
+9387 PRINT ``"   press any key to continue"
+9388 IF INKEY$<>"" THEN GO TO 9388
+9389 IF INKEY$="" THEN GO TO 9389
+
+9390 CLS : PRINT `TAB 12;"CONTROLS"
+9393 PRINT ``;TAB 5;"Keyboard controls are:"
+9400 PRINT ``;TAB 10;"Left:    ""Q"""
+9405 PRINT ;TAB 10;"Right:   ""W"""
+9410 PRINT ;TAB 10;"Up:      ""P"""
+9415 PRINT ; TAB 10;"Down:   ""L"""
+9420 PRINT ``TAB 7;"Good Shepherding!"
+9430 PRINT ``; TAB 6;"Press ""S"" to start"
+9440 IF INKEY$="s" THEN GO TO 9450
+9441 IF INKEY$="S" THEN GO TO 9450
+9445 GO TO 9440
+9450 RUN 2
+
+9950 REM WORKING SUBROUTINES
+9970 PAPER 7: INK 0: BRIGHT 0: BORDER 7
+9975 STOP
+9980 SAVE "SHEPHERD" LINE 9300
+9982 PRINT "REWIND AND PLAY TAPE TO VERIFY"
+9986 VERIFY "SHEPHERD"
+9987 PRINT `"PROGRAM VERIFIED"
+9989 STOP
+
+9990 INPUT "Program name to save "; LINE A$
+9993 SAVE *"m";1;A$: LINE 9300
+9994 VERIFY *"m";1;A$: PRINT A$;" VERIFIED"
+9995 STOP
+
+9997 INPUT "Program name to ERASE "; LINE A$
+9998 ERASE "m";1;A$
+9999 STOP
