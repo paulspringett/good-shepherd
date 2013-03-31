@@ -21,7 +21,7 @@
   62 REM TEN SPACES
   63 INK 0
   64 BRIGHT 0
-  65 PARER 6
+  65 PAPER 6
   70 FOR n=0 TO 9
   80 PRINT AT N,0;a$
   90 NEXT n
@@ -32,7 +32,7 @@
   98 PAPER 7
   99 PRINT AT 0,0; INK 0;"Hi-Score: "
  100 PAPER 5
- 110 FROM N=10 TO 21
+ 110 FOR N=10 TO 21
  120 PRINT AT n,0;A$
  130 NEXT n
  135 PRINT AT 11,1;"THE FOLD"
@@ -83,7 +83,7 @@
 1006 PRINT AT 8,6; 151-T;
 1007 IF 151-T<100 THEN PRINT " "
 1010 LET T=T+1
-1015 A$=INKEY$
+1015 LET A$=INKEY$
 1016 IF T<3+L AND A$="" THEN LET A$="W"
 1020 LET A=S(T+L=1,1)+(A$="L")-(A$="P")
 1025 LET B=S(T+L-1,2)+(A$="W")-(A$="Q")
@@ -133,8 +133,8 @@
 3201 LET W(T,1)=A: LET W(T,2)=B: GO TO 1250
 
 4000 REM LOSE - OUT OF TIME
-4005 PRINT AT 13,0;"TIME UP!  "`"YOU SHOULD"
-4010 PRINT "BE BACK BY"`"NOW. YOU  "`"LOSE!     "
+4005 PRINT AT 13,0;"TIME UP!  "'"YOU SHOULD"
+4010 PRINT "BE BACK BY"'"NOW. YOU  "'"LOSE!     "
 4020 GO TO 6550
 4500 LET A=S(T+L-1,2)
 4501 IF S(T+L,2)<>A THEN GO TO 1093
@@ -151,8 +151,8 @@
 5035 BEEP RND*.01,10+RND*15
 5045 NEXT N
 5050 INK 0: PAPER 5
-5060 PRINT AT 13,0;"YOU SHOULD"`"LEAD THE  "
-5065 PRINT "SHEEP: NOT"`"CRASH INTO"`"THEM!     "
+5060 PRINT AT 13,0;"YOU SHOULD"'"LEAD THE  "
+5065 PRINT "SHEEP: NOT"'"CRASH INTO"'"THEM!     "
 5070 GO TO 6550
 
 5500 REM WOLF KILLED
@@ -198,8 +198,8 @@
 6290 RETURN
 
 6400 REM LOSE - NOT FED ENOUGH FOOD
-6401 PRINT AT 13,0;"YOU DIDN'T"`"LET THEM  "
-6405 PRINT "EAT ENOUGH"`"FOOD! YOU "`"LOSE!     "
+6401 PRINT AT 13,0;"YOU DIDN'T"'"LET THEM  "
+6405 PRINT "EAT ENOUGH"'"FOOD! YOU "'"LOSE!     "
 6410 GO TO 6550
 
 6500 REM LOSE - WOLF EATS SHEEP
@@ -207,21 +207,21 @@
 6505 FOR N=1 TO 10
 6510 BEEP .5/N,-10-N
 6515 NEXT N
-6520 PRINT AT 13,0;"SORRY, YOU"`"LOST: BUT "
-6540 PRINT "THE WOLF  "`"ENJOYED   "`"HIS LUNCH!"
+6520 PRINT AT 13,0;"SORRY, YOU"'"LOST: BUT "
+6540 PRINT "THE WOLF  "'"ENJOYED   "'"HIS LUNCH!"
 
 6550 REM LIST - SET HISCORE AND OFFER NEW GAME
 6551 FOR N=1 TO 9
 6552 BEEP RND*.1,10+(RND*40)
 6554 NEXT N
-6555 PRINT `"PRESS Y TO"`"PLAY AGAIN"
+6555 PRINT '"PRESS Y TO"'"PLAY AGAIN"
 6900 IF S>H THEN LET H=S
 
 7000 LET A$=INKEY$
 7010 IF A$<>"Y" THEN GO TO 7000
 7020 GO TO 10
 
-9000 USR GRAPHICS
+9000 REM USR GRAPHICS
 9005 RESTORE
 9010 FOR N=1 TO 6
 9020 READ A$
@@ -241,7 +241,7 @@
 
 9200 REM CRIMMOND
 9210 FOR N=1 TO 34
-9220 READ A: READ B: BEED A/5,B
+9220 READ A: READ B: BEEP A/5,B
 9230 NEXT N
 9240 DATA 2,0,4,9,1,10,1,7,4,12,1,10,1,7
 9250 DATA 4,5,2,4,4,5,2,9,2,9,2,7,27,4,11,2
@@ -255,11 +255,11 @@
 9320 PRINT AT 1,9;;"GOOD SHEPHERD."
 9330 PRINT AT 3,3;"COPYRIGHT ";
 9335 PRINT ;"S.SPRINGETT 1984"
-9340 PRINT `"Your task is to lead the sheep"
+9340 PRINT '"Your task is to lead the sheep"
 9345 PRINT "to good pasture, and protect"
 9350 PRINT "them from the wolf, who's hungry"
 9355 PRINT "for a nice bit of mutton...."
-9360 PRINT ``"You've only a limited time to "
+9360 PRINT ''"You've only a limited time to "
 9361 PRINT "ensure the sheep have had enough"
 9362 PRINT "to eat, and avoid or kill the"
 9363 PRINT "wolf. Of course you must not run"
@@ -267,30 +267,30 @@
 9365 PRINT "sheep will be scattered and lost"
 
 9366 GO SUB 9000: REM USR GRAPHICS
-9367 PRINT `;TAB 7;"xxxxxxxxxxxxxxxxx&"
+9367 PRINT ';TAB 7;"xxxxxxxxxxxxxxxxx&"
 9368 GO SUB 9200: REM CRIMMOND
-9370 PRINT `"   Press any key to continue"
+9370 PRINT '"   Press any key to continue"
 9371 IF INKEY$<>"" THEN GO TO 9371
 9372 IF INKEY$="" THEN GO TO 9372
 9373 CLS
-9374 PRINT ```"When you have fed the sheep,"
+9374 PRINT '''"When you have fed the sheep,"
 9375 PRINT "take them back to the fold (you"
 9376 PRINT "can get in only via the door you"
 9377 PRINT "came out of) to get a new and"
 9378 PRINT "larger flock to care for."
-9379 PRINT ```"Kill the wolf by running himdown with the shepherd: butwatch out, because he's a trickycustomer!"
-9387 PRINT ``"   press any key to continue"
+9379 PRINT '''"Kill the wolf by running himdown with the shepherd: butwatch out, because he's a trickycustomer!"
+9387 PRINT ''"   press any key to continue"
 9388 IF INKEY$<>"" THEN GO TO 9388
 9389 IF INKEY$="" THEN GO TO 9389
 
-9390 CLS : PRINT `TAB 12;"CONTROLS"
-9393 PRINT ``;TAB 5;"Keyboard controls are:"
-9400 PRINT ``;TAB 10;"Left:    ""Q"""
+9390 CLS : PRINT 'TAB 12;"CONTROLS"
+9393 PRINT '';TAB 5;"Keyboard controls are:"
+9400 PRINT '';TAB 10;"Left:    ""Q"""
 9405 PRINT ;TAB 10;"Right:   ""W"""
 9410 PRINT ;TAB 10;"Up:      ""P"""
 9415 PRINT ; TAB 10;"Down:   ""L"""
-9420 PRINT ``TAB 7;"Good Shepherding!"
-9430 PRINT ``; TAB 6;"Press ""S"" to start"
+9420 PRINT ''TAB 7;"Good Shepherding!"
+9430 PRINT ''; TAB 6;"Press ""S"" to start"
 9440 IF INKEY$="s" THEN GO TO 9450
 9441 IF INKEY$="S" THEN GO TO 9450
 9445 GO TO 9440
@@ -302,11 +302,11 @@
 9980 SAVE "SHEPHERD" LINE 9300
 9982 PRINT "REWIND AND PLAY TAPE TO VERIFY"
 9986 VERIFY "SHEPHERD"
-9987 PRINT `"PROGRAM VERIFIED"
+9987 PRINT '"PROGRAM VERIFIED"
 9989 STOP
 
 9990 INPUT "Program name to save "; LINE A$
-9993 SAVE *"m";1;A$: LINE 9300
+9993 SAVE *"m";1;A$ LINE 9300
 9994 VERIFY *"m";1;A$: PRINT A$;" VERIFIED"
 9995 STOP
 
