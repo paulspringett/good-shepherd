@@ -1,4 +1,4 @@
-## Good Shepherd (currently WIP)
+## Good Shepherd
 
 Copyright &copy; 1984 Simon Springett
 
