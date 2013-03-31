@@ -2,16 +2,12 @@
 
 Copyright 1984 Simon Springett
 
-### Running
+### How do I get this running?
 
-You'll need a ZX Spectrum or an emulator, like [Fuse]().
+First, you'll need a ZX Spectrum emulator, like [Fuse](http://fuse-emulator.sourceforge.net/). Versions are available for Mac, Linux and PC.
 
-Download the binary TAP file
+Next, download the binary TAP (tape) file
 
-* [shepherd.tap]()
+* [GoodShepherd.tap](https://github.com/paulspringett/GoodShepherd/raw/v1.0/GoodShepherd.tap)
 
-and load this into the emulator. Then type:
-
-    RUN
-
-and press ENTER
+and load this into the emulator. Then type `RUN` (the emulator may autocomplete `R` to `RUN`) and press `ENTER`.
