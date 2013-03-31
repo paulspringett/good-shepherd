@@ -10,7 +10,7 @@ First, you'll need a ZX Spectrum emulator, like [Fuse](http://fuse-emulator.sour
 
 Next, download the binary TAP (tape) file
 
-* [GoodShepherd.tap](https://github.com/paulspringett/GoodShepherd/raw/v1.0/GoodShepherd.tap)
+* [GoodShepherd.tap](https://github.com/paulspringett/GoodShepherd/raw/v1.1/GoodShepherd.tap)
 
 and load this into the emulator. The game should start automatically.
 
