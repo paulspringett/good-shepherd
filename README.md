@@ -35,4 +35,8 @@ To compile
 
     ./bas2tap/bas2tap -a1 GoodShepherd.bas
 
+### Other utilities
+
+The [Fuse utils](http://sourceforge.net/projects/fuse-for-macosx/files/fuse-utils/0.10.0/) provide binaries for almost anything you'd want to do with Spectrum files.
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Good Shepherd</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Simon Springett</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
